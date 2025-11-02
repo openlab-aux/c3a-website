@@ -10,4 +10,4 @@ RUN ls -lah /src/dist
 
 FROM nginx:1.29.3-alpine-slim
 
-COPY --from=builder /src/dist/*  /usr/share/nginx/html
+COPY --from=builder /src/dist/  /usr/share/nginx/html
